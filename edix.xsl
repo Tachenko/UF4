@@ -22,8 +22,11 @@
                                         <xsl:value-of select="ite/@nombre" />
                                     </a>
                                 </h1>
-                                 <p>
-                                <xsl:value-of select="ite/telefono" />
+                                 <p>                                  
+                                <xsl:value-of select="ite/telefono" />                              
+                                </p>
+                                <p>
+                                    <xsl:value-of select="ite/empresa"/>
                                 </p>
                             </div>
                            
@@ -32,39 +35,49 @@
              <div class="tablas">
                            
                         <!-- TABLA PROFESORES -->
+                            <h2 class="personal-docente">Personal Docente</h2>
                             <table class="tabla_profesor">
-                                 <h2>Personal Docente</h2>
-                                <tr>
+                             
+                              
+                              <tr class="profesores">
                                     <xsl:for-each select="ite/profesores/profesor">
                                    
-                                        <td>
+                         <!--<td>
                                             <xsl:value-of select="id" />
                                         </td>
                                         <td>
                                             <xsl:value-of select="nombre" />
-                                        </td>
-                              
+                                        </td> -->               
+                           
                                         <div class="fotos_profes">
                                          
                                             <xsl:if test="id=1">
-                                                <td>
+                                                <td class="felix_profe">
                                                     <img id="profesores" src="imagenes/felix.jpg" alt="Felix" title="Felix" class="felix" />
+                                                    <xsl:value-of select="id" />
+                                                    <xsl:value-of select="nombre" />
                                                 </td>
                                             </xsl:if>
                                       
                                             <xsl:if test="id=2">
-                                                <td>
+                                                <td class="raul_profe">
                                                     <img id="profesores" src="imagenes/raul.jpg" alt="Raul" title="Raul" class="raul" />
+                                                    <xsl:value-of select="id" />
+                                                    <xsl:value-of select="nombre" />
                                                 </td>
                                             </xsl:if>
                                             <xsl:if test="id=3">
-                                                <td>
+                                                <td class="raquel_profe">
                                                     <img id="profesores" src="imagenes/raquel.jpeg" alt="Raquel" title="Raquel" class="raquel" />
+                                                    <xsl:value-of select="id" />
+                                                    <xsl:value-of select="nombre" />
                                                 </td>
                                             </xsl:if>
                                             <xsl:if test="id=4">
-                                                <td>
+                                                <td class="tomas_profe">
                                                     <img id="profesores" src="imagenes/tomas.jpg" alt="Tomas" title="Tomas" class="tomas" />
+                                                    <xsl:value-of select="id" />
+                                                    <xsl:value-of select="nombre" />
                                                 </td>
                                             </xsl:if>
                                         </div>
@@ -150,7 +163,7 @@
                                                           
                                                                  <div class="insert_nombre">
                                                                          <label for="nombre">Nombre</label>
-                                                                         <input type="text" name="nombre" title="Introduzca sus apellidos" />
+                                                                         <input type="text" name="nombre" title="Introduzca su nombre" />
                                                                  </div>
 
                                                                     <div class="insert_apellidos">
@@ -167,8 +180,8 @@
                                                                        <div class="insert_fecha_nacimiento">
                                  
                                                                                <label for="fecha_nacimiento">
-                                                                                    Fecha de nacimiento:</label>
-                                                                                <input type="fecha" placeholder="dd/mm/aaaa" />
+                                                                                    Fecha de Nacimiento</label>
+                                                                                <input type="fecha" placeholder="dd/mm/aaaa" title="Indique fecha de nacimiento"/>
                                                                        </div>
                                                                                           
                                                                       <div class="insert_email">
@@ -179,7 +192,7 @@
   
                                                                        <div class="insert_telefono">
                                                                             <label for="telefono">Teléfono</label>
-                                                                            <input type="tel" name="telefono" placeholder="987654321"/>
+                                                                            <input type="tel" name="telefono" placeholder="987654321" title="Telefono de contacto"/>
                                                                        </div>
                                                               
                                                     </div>           

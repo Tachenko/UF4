@@ -61,8 +61,7 @@ h2 {
 
 p {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
-    font-size: 12px;
-
+    font-size: 12px; 
     
 }
 
@@ -145,30 +144,43 @@ header {
     -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
 
+.profesores {
+  
 
+}
 .tabla_profesor td{
-    color:#000;
+    color:#ffffff;
     font-weight: bolder;
     font-family: 'Take Chances', Verdana, Geneva, Tahoma, sans-serif;
 
+
 }
 
-
-.fotos_profes {
+.personal-docente {
+    margin: -28px 0px 0px 15px;
    
-    display: inline-block;
-    align-items:center;  
-
+    
 }
+
+
 
 .felix {  
         width: 150px; 
+        height: 100px;
         -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
         -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
         box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
-        
+        order: 1;
+     
+}
+
+.felix_profe {
+    padding: 15px;
 }
 
 .raul {  
@@ -176,6 +188,12 @@ header {
     -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    order: 2;
+
+}
+
+.raul_profe{
+    padding: 15px;
 }
 
 .raquel {  
@@ -183,6 +201,11 @@ header {
     -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    order: 3;
+}
+
+.raquel_profe {
+    padding: 15px;
 }
 
 .tomas {  
@@ -190,6 +213,11 @@ header {
     -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    order: 4;
+}
+
+.tomas_profe {
+    padding: 15px;
 }
 
 
@@ -477,12 +505,13 @@ height: 80px;
      margin-left: 50px;
     max-width: fit-content;
     font-size: 12px;
-
+ 
   
 }
 
 .checkbox input {    
     margin-left: 15px;
+
 }
 
 
